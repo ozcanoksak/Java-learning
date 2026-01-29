@@ -29,7 +29,6 @@ public class C03_starsWith {
             System.out.println(str.startsWith("m",0)); //true
 
             System.out.println(str.startsWith("java",10)); // false
-            System.out.println("helloworld");
 
     }
 }
