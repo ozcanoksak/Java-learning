@@ -19,6 +19,7 @@ public class C01_LocalVariables {
             // bir loop icerisinde olusturulan variabler sadece o loop icerisinde gecerlidir
         }
 
+        //
         // System.out.println(adres);
 
         double pi;
