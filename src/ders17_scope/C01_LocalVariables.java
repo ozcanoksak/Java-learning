@@ -12,6 +12,8 @@ public class C01_LocalVariables {
         String isim="Ramazan";
         // System.out.println(dogruMu);
 
+
+
         for (int i = 0; i <10 ; i++) {
             String adres="Ankara";
             // bir loop icerisinde olusturulan variabler sadece o loop icerisinde gecerlidir
@@ -21,7 +23,7 @@ public class C01_LocalVariables {
 
         double pi;
 
-        // System.out.println(pi);
+        // System.out.println(pi); //hata verir
         // local variable'lar deger atamadan olusturulabilir ancak KULLANILAMAZ
         // kullanmadan önce değer atanmış OLMALIDIR.
 
