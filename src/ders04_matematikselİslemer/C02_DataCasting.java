@@ -6,7 +6,7 @@ public class C02_DataCasting {
     public static void main(String[] args) {
 
         /* Kullanıcıdan iki double sayı alin, ikinci sayıyı, ilk sayıya bölün ve bölüm işleminin
-        sonucunun tam sayı kısmını yazdırın
+        sonucunun tam sayı kısmını yazdırın.
         */
 
 
