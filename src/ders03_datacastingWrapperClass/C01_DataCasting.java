@@ -23,7 +23,8 @@ public class C01_DataCasting {
 
         /* a= dbl;  (hatalı olur)
 
-        short abc= dbl; (hatalı olur) */
+        short abc= dbl; (hatalı olur)
+        */
 
 
 
