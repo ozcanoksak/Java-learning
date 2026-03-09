@@ -15,12 +15,13 @@ public class C02_Arrays {
             System.out.print(arr[i] + " ");
         }
         System.out.println("");
+
         // bu array'i array olarak yazdiralim
+        System.out.println(arr); //[Ljava.lang.String;@5caf905d
 
-        System.out.println(arr);
         // array bir obje / non-primitive data oldugundan java referansini yazdirir
-        // Array'i array olarak yazdirmak isterseniz Arrays class'indan yardim almalisiniz
 
+        // Array'i array olarak yazdirmak isterseniz Arrays class'indan yardim almalisiniz
         System.out.println(Arrays.toString(arr)); // [Ali, Ulus, Nesrin]
 
     }

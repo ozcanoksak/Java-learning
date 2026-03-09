@@ -7,13 +7,16 @@ public class C01_Arrays {
 
         // array'in bir elementine ulasmak ve update etmek istersek
 
+       //3. elemanı yazdır
         System.out.println(arr1[2]); // 6
 
+        //3. elemanı güncelle
         arr1[3]=20;
 
         System.out.println(arr1[3]); // 20
 
 
+        //dizi uzunluğunu yazdır
         System.out.println(arr1.length); // 5
 
         // son elementi yazdirin
