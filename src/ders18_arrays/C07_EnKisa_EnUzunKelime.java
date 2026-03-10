@@ -4,7 +4,8 @@ public class C07_EnKisa_EnUzunKelime {
 
     public static void main(String[] args) {
 
-        // Soru 6- Verilen String bir array’deki
+        // Soru 6
+        // Verilen String bir array’deki
         // en uzun ve en kisa kelimeleri yazdiran bir method olusturun.
 
         String[] arr ={"Hasan", "Ilker","Senturk","Omer Faruk"};

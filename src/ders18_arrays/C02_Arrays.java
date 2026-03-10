@@ -8,7 +8,7 @@ public class C02_Arrays {
 
         String [] arr= {"Ali", "Ulus","Nesrin"};
 
-        // Bu array'in tum elementlerini aralarinda bir bosluk birakarak yazdiralim
+        // Bu array'in tüm elementlerini aralarinda bir boşluk bırakarak yazdıralım
 
         for (int i = 0; i < arr.length; i++) {
 

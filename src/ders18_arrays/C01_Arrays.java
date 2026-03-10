@@ -19,11 +19,11 @@ public class C01_Arrays {
         //dizi uzunluğunu yazdır
         System.out.println(arr1.length); // 5
 
-        // son elementi yazdirin
+        // son elementin index numarasını yazdırın
         System.out.println(arr1[arr1.length-1]); // 10
 
 
-        // array'in tum elementlerini yazdirin
+        // array'in tüm elementlerini yazdirin
 
         for (int i = 0; i <arr1.length ; i++) {
 
@@ -32,11 +32,11 @@ public class C01_Arrays {
         }
 
 
-        // array'in uzunlugu sonradan degistirilemez
+        // array'in uzunluğu sonradan degistirilemez
         // eger array'de olmayan bir index'e atama yapmak isterseniz
-        // ArrayIndexOutOfBoundsException
+        // ArrayIndexOutOfBoundsException hatası verir
         // bu hata Compile Time Error CTE degil
-        // Run time error'dur
+        // Run time error'dur bu yüzden sadece çalıştığı zaman belli olur
 
         // arr1[5]=35;
     }

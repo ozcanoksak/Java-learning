@@ -2,6 +2,7 @@ package ders18_arrays;
 
 import java.util.Arrays;
 
+
 public class C03_ArrayElementleriniArtirma {
     public static void main(String[] args) {
 
@@ -17,10 +18,9 @@ public class C03_ArrayElementleriniArtirma {
 
         System.out.println(Arrays.toString(arr));  // [4, 6, 8, 10]
 
-
+        //fonksiyon kUllanılaraK
         arr= elementleri2Artir(arr);
-
-        System.out.println(Arrays.toString(arr)); // [6, 8, 10, 12]
+        System.out.println((Arrays.toString(arr))); // [6, 8, 10, 12]
     }
 
     public static int[] elementleri2Artir(int[] arr){
