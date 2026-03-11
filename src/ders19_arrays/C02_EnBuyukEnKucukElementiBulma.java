@@ -14,7 +14,7 @@ public class C02_EnBuyukEnKucukElementiBulma {
 
     public static void enBuyukEnKucukElementYazdir(int[] arr){
 
-        Arrays.sort(arr); // [1, 2, 3, 5, 8, 9]
+        Arrays.sort(arr); // [1, 2, 3, 5, 8, 9] sort dizideki elemanları sıralar
 
         System.out.println("En buyuk element : " + arr[arr.length-1]);
         System.out.println("En kucuk element : " + arr[0]);

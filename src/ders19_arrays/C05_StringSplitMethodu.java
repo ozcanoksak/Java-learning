@@ -6,9 +6,13 @@ public class C05_StringSplitMethodu {
 
     public static void main(String[] args) {
 
+
+
         String str= "java gercekten cok cok guzel";
         // verilen str'da kac tane e harfi oldugunu bulunuz
 
+
+        //split methodunda parantez içerisine yazılan şeyi kaldırıp diziyi elemanlara böler
 
         String[] eArrayi=str.split("e");
 

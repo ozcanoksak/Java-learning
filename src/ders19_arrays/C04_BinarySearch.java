@@ -12,6 +12,9 @@ public class C04_BinarySearch {
         System.out.println(Arrays.binarySearch(arr,1)); // 0
         System.out.println(Arrays.binarySearch(arr,9)); // -10
         /*
+          Binary search methodu dizide bir şeyi aramak için kullanılır
+        aranan anahtarı girdikten sonra bize kaıncı indexte olduğunu söyler
+
           Binary search method'unun dogru sonuclar verebilmesi icin
           oncelikle sort method'u kullanilmalidir.
 

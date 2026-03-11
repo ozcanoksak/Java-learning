@@ -8,7 +8,7 @@ public class C06_ArrayeyeniDegerAtama {
 
         String str= "java";
 
-        str="hava";
+        str="hava"; //str artık hava
 
 
 
@@ -24,9 +24,10 @@ public class C06_ArrayeyeniDegerAtama {
         String [] arr1={"Ali","Veli"};
         String [] arr2={"A","B","C"};
 
-        arr1=arr2;
+        arr1=arr2; //arr1 dizisinin elemanları artık arr2 dizisinin elemanları
 
         System.out.println(Arrays.toString(arr1)); // [A, B, C]
+
 
         // 2- istedigimiz uzunlukta yeni bos bir array degeri atayabiliriz
 

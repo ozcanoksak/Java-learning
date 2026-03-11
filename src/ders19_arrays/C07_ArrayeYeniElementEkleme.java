@@ -7,14 +7,14 @@ public class C07_ArrayeYeniElementEkleme {
 
         int[] arr= {2,4,6};
 
-        // bu arr'e 4.bir element olarak 8 ekleyelim
+        // bu arr'e 4.bir eleman olarak 8 ekleyelim
 
         /*
           Var olan bir array'e yeni eleman eklenemez
           ama yeni deger atanabilir
 
           once int[] arr2= [2, 4, 6, 8] seklinde yeni bir array olusturup
-          sonra arr2 degerini arr'ye atayabilirim
+          sonra arr2 degerini arr'ye atayabiliriz
          */
 
         // yeni array olusturalim
