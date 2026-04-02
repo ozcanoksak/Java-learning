@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>soru4.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #2aacb8;}
+.s4 { color: #7a7e85;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+soru4.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">algoritmaOdev</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">soru4 </span><span class="s2">{</span>
+
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+
+        <span class="s0">int</span><span class="s2">[][] </span><span class="s1">saatler </span><span class="s2">= {</span>
+                <span class="s2">{</span><span class="s3">2</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">5</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">8</span><span class="s2">}, </span><span class="s4">// Çalışan 0</span>
+                <span class="s2">{</span><span class="s3">7</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">4</span><span class="s2">}, </span><span class="s4">// Çalışan 1</span>
+                <span class="s2">{</span><span class="s3">3</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">2</span><span class="s2">}, </span><span class="s4">// Çalışan 2</span>
+                <span class="s2">{</span><span class="s3">9</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">7</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">1</span><span class="s2">}, </span><span class="s4">// Çalışan 3</span>
+                <span class="s2">{</span><span class="s3">3</span><span class="s2">, </span><span class="s3">5</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">6</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">8</span><span class="s2">}, </span><span class="s4">// Çalışan 4</span>
+                <span class="s2">{</span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">6</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">4</span><span class="s2">}, </span><span class="s4">// Çalışan 5</span>
+                <span class="s2">{</span><span class="s3">3</span><span class="s2">, </span><span class="s3">7</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">8</span><span class="s2">, </span><span class="s3">4</span><span class="s2">}, </span><span class="s4">// Çalışan 6</span>
+                <span class="s2">{</span><span class="s3">6</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">5</span><span class="s2">, </span><span class="s3">9</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">7</span><span class="s2">, </span><span class="s3">9</span><span class="s2">}  </span><span class="s4">// Çalışan 7</span>
+        <span class="s2">};</span>
+
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">toplamSaatler </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s3">8</span><span class="s2">];</span>
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">calisanNolar </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s3">8</span><span class="s2">];</span>
+
+
+        <span class="s4">//Her çalışanın toplam saatini hesaplama</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s3">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">saatler</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s0">int </span><span class="s1">satirToplami </span><span class="s2">= </span><span class="s3">0</span><span class="s2">;</span>
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s3">0</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">saatler</span><span class="s2">[</span><span class="s1">i</span><span class="s2">].</span><span class="s1">length</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s1">satirToplami </span><span class="s2">= </span><span class="s1">satirToplami </span><span class="s2">+ </span><span class="s1">saatler</span><span class="s2">[</span><span class="s1">i</span><span class="s2">][</span><span class="s1">j</span><span class="s2">];</span>
+            <span class="s2">}</span>
+
+            <span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">satirToplami</span><span class="s2">;</span>
+            <span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">i</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s4">// Büyükten küçüğe sıralama (Bubble Sort)</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s3">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">toplamSaatler</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s3">0</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">toplamSaatler</span><span class="s2">.</span><span class="s1">length </span><span class="s2">- </span><span class="s3">1</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j</span><span class="s2">] &lt; </span><span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">]) {</span>
+
+
+                    <span class="s4">// Saatleri yer değiştir</span>
+                    <span class="s0">int </span><span class="s1">geciciSaat </span><span class="s2">= </span><span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j</span><span class="s2">];</span>
+                    <span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j</span><span class="s2">] = </span><span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">];</span>
+                    <span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">] = </span><span class="s1">geciciSaat</span><span class="s2">;</span>
+
+                    <span class="s4">// Çalışan numaralarını da beraberinde yer değiştir</span>
+                    <span class="s0">int </span><span class="s1">geciciNo </span><span class="s2">= </span><span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">j</span><span class="s2">];</span>
+                    <span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">j</span><span class="s2">] = </span><span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">];</span>
+                    <span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">j </span><span class="s2">+ </span><span class="s3">1</span><span class="s2">] = </span><span class="s1">geciciNo</span><span class="s2">;</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Çalışanlar ve Toplam Çalışma Saatleri:&quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s3">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">toplamSaatler</span><span class="s2">.</span><span class="s1">length</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s5">&quot;Çalışan &quot; </span><span class="s2">+ </span><span class="s1">calisanNolar</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] + </span><span class="s5">&quot;: &quot; </span><span class="s2">+ </span><span class="s1">toplamSaatler</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] + </span><span class="s5">&quot; saat&quot;</span><span class="s2">);</span>
+
+            <span class="s4">/* output: 
+            Çalışanlar ve Toplam Çalışma Saatleri: 
+ 
+            Çalışan 7: 41 saat 
+            Çalışan 6: 37 saat 
+            Çalışan 0: 34 saat 
+            Çalışan 4: 32 saat 
+            Çalışan 3: 31 saat 
+            Çalışan 1: 28 saat 
+            Çalışan 5: 28 saat 
+            Çalışan 2: 20 saat 
+            */</span>
+        <span class="s2">}</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+
+</pre>
+</body>
+</html>

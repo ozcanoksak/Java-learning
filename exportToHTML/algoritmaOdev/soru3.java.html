@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>soru3.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #7a7e85;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+soru3.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">algoritmaOdev</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">ArrayList</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">soru3 </span><span class="s2">{</span>
+
+
+        <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+
+                <span class="s1">ArrayList</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">&gt; </span><span class="s1">sinifA </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ArrayList</span><span class="s2">&lt;&gt;();</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Özcan&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Özge&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Mehmet&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Can&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Berfin&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifA</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Deniz&quot;</span><span class="s2">);</span>
+
+                <span class="s1">ArrayList</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">&gt; </span><span class="s1">sinifB </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ArrayList</span><span class="s2">&lt;&gt;();</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Mehmet&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Can&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Ayfer&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Jiyan&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Selin&quot;</span><span class="s2">);</span>
+                <span class="s1">sinifB</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s3">&quot;Yusuf&quot;</span><span class="s2">);</span>
+
+                <span class="s4">// A'daki herkesi al, sonra B'de olup A'da olmayanları ekle (birleşim)</span>
+
+            <span class="s1">ArrayList</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">&gt; </span><span class="s1">birlesim </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ArrayList</span><span class="s2">&lt;&gt;(</span><span class="s1">sinifA</span><span class="s2">);</span>
+
+                <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">sinifB</span><span class="s2">.</span><span class="s1">size</span><span class="s2">(); </span><span class="s1">i</span><span class="s2">++) {</span>
+                    <span class="s0">if </span><span class="s2">(!</span><span class="s1">birlesim</span><span class="s2">.</span><span class="s1">contains</span><span class="s2">(</span><span class="s1">sinifB</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">))) {</span>
+                        <span class="s1">birlesim</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">sinifB</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">));</span>
+                    <span class="s2">}</span>
+                <span class="s2">}</span>
+
+                <span class="s4">// A ile B'dekilerin kesişimi</span>
+            <span class="s1">ArrayList</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">&gt; </span><span class="s1">kesisim </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ArrayList</span><span class="s2">&lt;&gt;();</span>
+
+                <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">size</span><span class="s2">(); </span><span class="s1">i</span><span class="s2">++) {</span>
+                    <span class="s0">if </span><span class="s2">(</span><span class="s1">sinifB</span><span class="s2">.</span><span class="s1">contains</span><span class="s2">(</span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">))) {</span>
+                        <span class="s1">kesisim</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">));</span>
+                    <span class="s2">}</span>
+                <span class="s2">}</span>
+
+                <span class="s4">// A'da olup B'de olmayanlar</span>
+                <span class="s1">ArrayList</span><span class="s2">&lt;</span><span class="s1">String</span><span class="s2">&gt; </span><span class="s1">fark </span><span class="s2">= </span><span class="s0">new </span><span class="s1">ArrayList</span><span class="s2">&lt;&gt;();</span>
+
+                <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">size</span><span class="s2">(); </span><span class="s1">i</span><span class="s2">++) {</span>
+                    <span class="s0">if </span><span class="s2">(!</span><span class="s1">sinifB</span><span class="s2">.</span><span class="s1">contains</span><span class="s2">(</span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">))) {</span>
+                        <span class="s1">fark</span><span class="s2">.</span><span class="s1">add</span><span class="s2">(</span><span class="s1">sinifA</span><span class="s2">.</span><span class="s1">get</span><span class="s2">(</span><span class="s1">i</span><span class="s2">));</span>
+                    <span class="s2">}</span>
+                <span class="s2">}</span>
+
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Sınıf A: &quot; </span><span class="s2">+ </span><span class="s1">sinifA</span><span class="s2">);</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Sınıf B: &quot; </span><span class="s2">+ </span><span class="s1">sinifB</span><span class="s2">);</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Birleşim: &quot; </span><span class="s2">+ </span><span class="s1">birlesim</span><span class="s2">);</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Kesişim: &quot; </span><span class="s2">+ </span><span class="s1">kesisim</span><span class="s2">);</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Fark (Sadece A'da olanlar): &quot; </span><span class="s2">+ </span><span class="s1">fark</span><span class="s2">);</span>
+
+                <span class="s4">/* Çıktı: 
+ 
+                   Sınıf A: [Özcan, Özge, Mehmet, Can, Berfin, Deniz] 
+                   Sınıf B: [Mehmet, Can, Ayfer, Jiyan, Selin, Yusuf] 
+                   Birleşim: [Özcan, Özge, Mehmet, Can, Berfin, Deniz, Ayfer, Jiyan, Selin, Yusuf] 
+                   Kesişim: [Mehmet, Can] 
+                   Fark (Sadece A'da olanlar): [Özcan, Özge, Berfin, Deniz] */</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+</pre>
+</body>
+</html>
