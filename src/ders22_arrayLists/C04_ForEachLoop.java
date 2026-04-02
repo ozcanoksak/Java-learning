@@ -32,7 +32,7 @@ public class C04_ForEachLoop {
             if (each>5){
                 toplam += each;
             }
-        }
+        }//for
 
         System.out.println("for-each loop ile toplam : " + toplam);
     }

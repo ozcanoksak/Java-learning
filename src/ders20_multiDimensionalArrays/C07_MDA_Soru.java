@@ -16,7 +16,7 @@ public class C07_MDA_Soru {
 
         int[][] arr =  {{3,4,5}, {2,3,6,7}};
 
-        // inner 2 array olacagini ama bunlarin uunluklarinin degisebilecegini kabul ettik
+        // inner 2 array olacagini ama bunlarin uzunluklarinin degisebilecegini kabul ettik
 
         int ortakIndexSayisi =arr[0].length<arr[1].length ? arr[0].length : arr[1].length ;
 

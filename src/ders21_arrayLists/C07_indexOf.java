@@ -22,6 +22,9 @@ public class C07_indexOf {
 
         System.out.println(sayilar.indexOf(5)); // 4
 
+        //list.LastIndexOf() methodu parantez içerisine yazdığımız elemanı listenin sonundan başlayıp arar
+        // arayıp, en sonda bulmuş olduğu elemanın index numarsını döndürür
+
         System.out.println(sayilar.lastIndexOf(5)); // 15
     }
 }

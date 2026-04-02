@@ -17,7 +17,7 @@ public class C02_doWhileLoop {
         /*
 
         do while loop'un 2 avantajı vardır
-        1- Loop body'si en az bie kere çalışır
+        1- Loop body'si en az bir kere çalışır
         (while loop'da başlangıç değeri uygun değilse, loop body'si hiç çalışmayabilir)
 
         2- while bitiş kontrolü loop kadar çalışır

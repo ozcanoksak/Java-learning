@@ -10,7 +10,8 @@ public class C01_LocalVariables {
 
         int sayi=10;
         String isim="Ramazan";
-        // System.out.println(dogruMu);
+        // System.out.println(dogruMu); //fonksiyon içerisinde tanımlandığı için sadece
+        // fonksiyonun içerisinde kullanılabilir
 
 
 
@@ -20,7 +21,7 @@ public class C01_LocalVariables {
         }
 
         //
-        // System.out.println(adres);
+        // System.out.println(adres); //hata verir
 
         double pi;
 

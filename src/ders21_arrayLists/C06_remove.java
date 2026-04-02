@@ -15,7 +15,7 @@ public class C06_remove {
             sayilar.add(arr[i]);
         }
 
-        sayilar.remove(2);
+        sayilar.remove(2); //2. indexteki değeri sildi
         System.out.println(sayilar);
         sayilar.remove(5);
         System.out.println(sayilar); // [1, 2, 3, 5, 3, 2, 5, 1, 2, 4, 5, 3, 4, 5]
