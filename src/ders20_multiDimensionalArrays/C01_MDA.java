@@ -20,6 +20,7 @@ public class C01_MDA {
 
         System.out.println(Arrays.deepToString(arr)); // [[4, 3, 1], [1, 2], [5, 6, 7], [], [3, 6, 8, 0]]
 
+
         // System.out.println(arr[3][0]); // ArrayIndexOutOfBoundsException
     }
 }
