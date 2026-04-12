@@ -12,19 +12,17 @@ public class C01_Arrays {
 
         //3. elemanı güncelle
         arr1[3]=20;
-
         System.out.println(arr1[3]); // 20
 
 
         //dizi uzunluğunu yazdır
         System.out.println(arr1.length); // 5
 
-        // son elementin index numarasını yazdırın
+        // son elementi yazdırın
         System.out.println(arr1[arr1.length-1]); // 10
 
 
         // array'in tüm elementlerini yazdirin
-
         for (int i = 0; i <arr1.length ; i++) {
 
             System.out.print(arr1[i] +" ");

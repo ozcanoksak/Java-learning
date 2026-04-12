@@ -14,7 +14,7 @@ public class C01_ElemanlariSagaKaydirma {
 
         arr=sagaKaydir(arr);
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr)); // [7,4,5,6]
     }
 
 
